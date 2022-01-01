@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>.table 선택자를 사용하면 각 행에 밑줄이 있는 형태의 테이블이 만들어짐</h4>
+      <table class="table">
+        <tr>
+          <th>#</th>
+          <th>이름</th>
+          <th>주소</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>홍길동</th>
+          <th>서울시 서대문구</th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th>박문수</th>
+          <th>서울시 강남구</th>
+        </tr>
+      </table>
+
+      <h4>줄무늬형 .table-striped 선택자를 추가하면 스트라이프 형태의 테이블이 됨.</h4>
+      <table class="table table-striped">
+        <tr>
+          <th>#</th>
+          <th>이름</th>
+          <th>주소</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>홍길동</th>
+          <th>서울시 서대문구</th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th>박문수</th>
+          <th>서울시 강남구</th>
+        </tr>
+      </table>
+
+      <h4>선 있는 테이블 .table-bordered 선택자를 추가하면 전체 셀에 대해 테두리가 만들어짐.</h4>
+      <table class="table table-bordered">
+        <tr>
+          <th>#</th>
+          <th>이름</th>
+          <th>주소</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>홍길동</th>
+          <th>서울시 서대문구</th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th>박문수</th>
+          <th>서울시 강남구</th>
+        </tr>
+      </table>
+
+      <h4>맥락적인 클래스들. &lt;tbody&gt;태그에 있는 &lt;tr&gt; 태그에 다음 선택자를 삽입하면 색상별로 나타낼 수 있음</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>이름</th>
+            <th>주소</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="success">
+            <th>success</th>
+            <th>홍길동</th>
+            <th>서울시 서대문구</th>
+          </tr>
+          <tr class="danger">
+            <th>danger</th>
+            <th>홍길동</th>
+            <th>서울시 서대문구</th>
+          </tr>
+          <tr class="warning">
+            <th>warning</th>
+            <th>홍길동</th>
+            <th>서울시 서대문구</th>
+          </tr>
+        </tbody>
+        <tr>
+          <th>2</th>
+          <th>박문수</th>
+          <th>서울시 강남구</th>
+        </tr>
+      </table>
+
+      <h4>반응형 테이블 .table을 .table-responsive로 감싸서 작은 기기에서 수평 스크롤을 할 수 있도록 반응형 테이블</h4>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>이름</th>
+              <th>주소</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="success">
+              <td>1</td>
+              <td>홍길동</td>
+              <td>서울시 서대문구</td>
+            </tr>
+            <tr class="danger">
+              <td>2</td>
+              <td>홍길동</td>
+              <td>서울시 서대문구</td>
+            </tr>
+
+            <tr class="warning">
+              <td>3</td>
+              <td>박문수</td>
+              <td>서울시 서대문구 testtttttttttttttttttttttttttttttttttttt</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

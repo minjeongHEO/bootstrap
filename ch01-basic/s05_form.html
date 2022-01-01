@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>폼 태그</h4>
+      <!-- 
+		.form-control 이 있는 모든 텍스트 기반의 <input>,<textarea>그리고 <select>
+		요소는 기본적인 width:100%; 최적의 여백을 위해 .form-group으로 레이블과 콘트롤을
+		감싼다. -->
+      <form>
+        <div class="form-group">
+          <!-- 최적의 여백을 위해서 폼다시 그룹을 쓴다 -->
+          <label for="email">Email address</label>
+          <!-- 부트스트랩에서 레이블은 볼드텍스트 효과줬음 -->
+          <input type="email" class="form-control" id="email" placeholder="Enter email" /><!-- 힌트기능의  html기능 -->
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password" />
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" />Check me out</label>
+          <!-- label로 감싸서 글자를 눌러도 체크가 된다. -->
+        </div>
+        <button type="submit" class="btn btn-default">Sign in</button>
+        <!-- input타입 써도 가능, 기본버튼스타일 맥락적 버튼 스타일 primary  -->
+      </form>
+
+      <h4>인라인 폼. sr-only 레이블 감추기</h4>
+      <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="email2">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" />
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="password2">Password</label>
+          <input type="password" class="form-control" id="password2" placeholder="Enter password" />
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+
+      <h4>수평 폼</h4>
+      <!-- 
+		.form-horizontal을 추가하여 수평 레이아웃을 만듦
+		이 안에서는 부트스트랩의 그리드 클래스를 사용하여 레이블과 폼 컨트롤 그룹을 정렬.
+		그리드 행 역할은 .form-group이 하기 때문에 .row는 필요가 없음
+		 -->
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="email3" class="col-lg-2 control-label">Email address</label>
+          <div class="col-lg-10">
+            <input type="email" class="form-control" id="email3" placeholder="Enter email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password3" class="col-lg-2 control-label">Password</label>
+          <div class="col-lg-10">
+            <input type="password" class="form-control" id="password3" placeholder="Enter password" />
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
