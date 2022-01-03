@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="contianer">
+      <h4>기본 페이지네이션</h4>
+      <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+        <!-- 이전,다음 : 꺽새 기호보다 작은 형태 -->
+      </ul>
+
+      <h4>비활성화 그리고 활성화</h4>
+      <ul class="pagination">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active">
+          <a href="#">1 <span class="sr-only">(current)</span></a>
+          <!-- 현재페이지를 코드상에도 표시할떄 -->
+        </li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+
+      <h4>크기</h4>
+      <ul class="pagination pagination-lg">
+        <li><a href="#">lg</a></li>
+        <li><a href="#">2</a></li>
+      </ul>
+
+      <ul class="pagination">
+        <li><a href="#">dft</a></li>
+        <li><a href="#">2</a></li>
+      </ul>
+
+      <ul class="pagination pagination-sm">
+        <li><a href="#">sm</a></li>
+        <li><a href="#">2</a></li>
+      </ul>
+
+      <ul class="pagination pagination-xs">
+        <!-- xs는 적용안됌 -->
+        <li><a href="#">xs</a></li>
+        <li><a href="#">2</a></li>
+      </ul>
+
+      <h4>페이지 기본 예제</h4>
+      <ul class="pager">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

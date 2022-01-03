@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>모달</h4>
+      <a href="#myModal" class="btn btn-primary" data-toggle="modal">모달 보여주기</a>
+
+      <!-- data-toggle기능부여 -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">modal-header x</button>
+              <h3 id="myModallabel">Modal header</h3>
+            </div>
+            <div class="modal-body">
+              <p>modal-body Modal content</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal">modal-footer close</button>
+              <button class="btn btn-primary">Save Change</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!-- 부트스트랩의 모달형태는 선택은 되는데 스타일자체가 제이쿼리랑 다르게 (자식객체를 삭제하고 부모영역을 선택?)-->

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>이미지 슬라이딩 컨트롤- Carousel</h4>
+      <div class="row">
+        <div class="col-md-9">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!-- 이미지를 개별적으로 선택할 수 있게한다 -->
+            <!-- 이미지 아래 점들 -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <!-- 첫번쨰이미지가 선택되어져있게 active (active는 하나만 엑티브여야한다) -->
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <!-- 이미지 링크 -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <!-- 현재보여지는 이미지를 명시 active (하나만 명시해야 하나의 이미지만 뜬다.) -->
+                <img src="../images/Koala.jpg" alt="First slide" />
+                <div class="carousel-caption">
+                  <h3>Koala</h3>
+                  <p>Animal World!!</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="../images/Lighthouse.jpg" alt="Second slide" />
+                <div class="carousel-caption">
+                  <h3>Lighthouse</h3>
+                  <p>Animal World!!</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="../images/Penguins.jpg" alt="Third slide" />
+                <div class="carousel-caption">
+                  <h3>Penguins</h3>
+                  <p>Animal World!!</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="../images/Tulips.jpg" alt="Forth slide" />
+                <div class="carousel-caption">
+                  <h3>Tulips</h3>
+                  <p>Animal World!!</p>
+                </div>
+              </div>
+            </div>
+            <!-- end of carousel-inner -->
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+            <!-- span태그에서 내장되있는 아이콘사용 -->
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!-- 부트스트랩의 모달형태는 선택은 되는데 스타일자체가 제이쿼리랑 다르게 (자식객체를 삭제하고 부모영역을 선택?)-->

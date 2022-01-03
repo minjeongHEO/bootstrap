@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>bootstrap</title>
-<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>이미지</h4>
+      <img src="../images/Koala.jpg" class="img-rounded" />
+      <img src="../images/Koala.jpg" class="img-circle" />
+      <img src="../images/Koala.jpg" class="img-thumbnail" /><!-- 반응형 적용 -->
 
-</head>
-<body>
-	<div class="container">	
-		<h4>이미지</h4>
-		<img src="../images/Koala.jpg" class="img-rounded">
-		
-	</div>
-	<script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-</body>
+      <h4>반응형 이미지</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="../images/Koala.jpg" class="img-rounded img-responsive" />
+        </div>
+        <div class="col-sm-4">
+          <img src="../images/Koala.jpg" class="img-rounded img-responsive" />
+        </div>
+        <div class="col-sm-4">
+          <img src="../images/Koala.jpg" class="img-rounded img-responsive" />
+        </div>
+      </div>
+      <br /><br /><br />
+    </div>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  </body>
 </html>
